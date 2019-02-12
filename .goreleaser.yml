@@ -1,0 +1,19 @@
+builds:
+  - main: main.go
+    goos:
+      - darwin
+      - linux
+      - windows
+    goarch:
+      - amd64
+    flags:
+      - -mod=vendor
+    env:
+      - CGO_ENABLED=0
+
+sign:
+  cmd: gpg
+  args: ["-u", "ops@exoscale.ch", "--detach-sign", "${artifact}"]
+  artifacts: all
+
+dist: build
