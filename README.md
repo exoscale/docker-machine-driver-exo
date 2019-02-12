@@ -1,7 +1,12 @@
 # Setup
 
-**TODO**
+Pick the [latest release from GitHub](https://github.com/exoscale/docker-machine-driver-exo/releases)
 
+## Go
+
+To using the latest version.
+
+    $ go get github.com/exoscale/docker-machine-driver-exo
 
 # Documentation
 
@@ -35,20 +40,20 @@ If you encounter any troubles, activate the debug mode with `docker-machine --de
 
 ### Environment variables and default values
 
-| CLI option                      | Environment variable         | Default                           |
-| ------------------------------- | ---------------------------- | --------------------------------- |
-| `--exoscale-affinity-group`     | `EXOSCALE_AFFINITY_GROUP`    | -                                 |
-| **`--exoscale-api-key`**        | `EXOSCALE_API_KEY`           | -                                 |
-| **`--exoscale-api-secret-key`** | `EXOSCALE_API_SECRET`        | -                                 |
-| `--exoscale-availability-zone`  | `EXOSCALE_AVAILABILITY_ZONE` | `ch-dk-2`                         |
-| `--exoscale-disk-size`          | `EXOSCALE_DISK_SIZE`         | `50`                              |
-| `--exoscale-image`              | `EXOSCALE_IMAGE`             | `Linux Ubuntu 16.04 LTS 64-bit`   |
-| `--exoscale-instance-profile`   | `EXOSCALE_INSTANCE_PROFILE`  | `small`                           |
-| `--exoscale-security-group`     | `EXOSCALE_SECURITY_GROUP`    | `docker-machine`                  |
-| `--exoscale-ssh-key`            | `EXOSCALE_SSH_KEY`           | -                                 |
-| `--exoscale-ssh-user`           | `EXOSCALE_SSH_USER`          | -                                 |
-| `--exoscale-url`                | `EXOSCALE_ENDPOINT`          | `https://api.exoscale.ch/compute` |
-| `--exoscale-userdata`           | `EXOSCALE_USERDATA`          | -                                 |
+| CLI option                      | Environment variable         | Default                            |
+| ------------------------------- | ---------------------------- | ---------------------------------- |
+| `--exoscale-affinity-group`     | `EXOSCALE_AFFINITY_GROUP`    | -                                  |
+| **`--exoscale-api-key`**        | `EXOSCALE_API_KEY`           | -                                  |
+| **`--exoscale-api-secret-key`** | `EXOSCALE_API_SECRET`        | -                                  |
+| `--exoscale-availability-zone`  | `EXOSCALE_AVAILABILITY_ZONE` | `ch-dk-2`                          |
+| `--exoscale-disk-size`          | `EXOSCALE_DISK_SIZE`         | `50`                               |
+| `--exoscale-image`              | `EXOSCALE_IMAGE`             | `Linux Ubuntu 18.04 LTS 64-bit`    |
+| `--exoscale-instance-profile`   | `EXOSCALE_INSTANCE_PROFILE`  | `small`                            |
+| `--exoscale-security-group`     | `EXOSCALE_SECURITY_GROUP`    | `docker-machine`                   |
+| `--exoscale-ssh-key`            | `EXOSCALE_SSH_KEY`           | -                                  |
+| `--exoscale-ssh-user`           | `EXOSCALE_SSH_USER`          | -                                  |
+| `--exoscale-url`                | `EXOSCALE_ENDPOINT`          | `https://api.exoscale.com/compute` |
+| `--exoscale-userdata`           | `EXOSCALE_USERDATA`          | -                                  |
 
 **NB:** the _instance profile_, _image_, and _availability zone_ are case insensitive.
 
