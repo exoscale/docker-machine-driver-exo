@@ -1,5 +1,5 @@
 # Changelog
 
-## v1.0.0
+## v0.9.0
 
 - Extracted from docker/machine
