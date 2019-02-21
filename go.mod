@@ -5,7 +5,7 @@ require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/docker/docker v0.0.0-20190211150300-680095405094 // indirect
 	github.com/docker/machine v0.16.1
-	github.com/exoscale/egoscale v0.13.3
+	github.com/exoscale/egoscale v0.14.0
 	github.com/sirupsen/logrus v1.0.6 // indirect
 	github.com/stretchr/testify v1.3.0
 	golang.org/x/crypto v0.0.0-20190211182817-74369b46fc67 // indirect
