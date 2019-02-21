@@ -18,7 +18,7 @@ github.com/docker/machine/libmachine/drivers/rpc
 github.com/docker/machine/libmachine/version
 github.com/docker/machine/libmachine/ssh
 github.com/docker/machine/version
-# github.com/exoscale/egoscale v0.13.3
+# github.com/exoscale/egoscale v0.14.0
 github.com/exoscale/egoscale
 # github.com/pmezard/go-difflib v1.0.0
 github.com/pmezard/go-difflib/difflib
