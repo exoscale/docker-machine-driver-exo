@@ -213,6 +213,12 @@ func (d *Driver) SetConfigFromFlags(flags drivers.DriverOptions) error {
 	return nil
 }
 
+// PreCreateCheck allows for pre-create operations to make sure a driver is
+// ready for creation
+func (d *Driver) PreCreateCheck() error {
+	return nil
+}
+
 // GetURL returns a Docker compatible host URL for connecting to this host
 // e.g tcp://10.1.2.3:2376
 func (d *Driver) GetURL() (string, error) {
@@ -703,7 +709,7 @@ func (d *Driver) getCloudInit() ([]byte, error) {
 	var err error
 	if d.UserDataFile != "" {
 		if _, err := os.Stat(d.UserDataFile); os.IsNotExist(err) {
-			d.UserData = d.UserDataFile
+			d.UserData = []byte(d.UserDataFile)
 		} else {
 			d.UserData, err = ioutil.ReadFile(d.UserDataFile)
 		}
